@@ -8,6 +8,7 @@
             <div class="w-2/3 overflow-y-auto">
                 <router-view></router-view>
             </div>
+
         </div>
 
     </div>
