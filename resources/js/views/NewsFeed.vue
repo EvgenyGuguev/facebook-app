@@ -9,8 +9,8 @@
 </template>
 
 <script>
-    import NewPost from "./NewPost";
-    import Post from "./Post";
+    import NewPost from "../components/NewPost";
+    import Post from "../components/Post";
 
     export default {
         name: "NewsFeed",
@@ -35,7 +35,7 @@
             .catch(error => {
                 console.log('Unable to fetch posts');
                 this.loading = false;
-            })
+            });
         }
     }
 </script>
