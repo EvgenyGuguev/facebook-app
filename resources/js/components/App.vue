@@ -5,7 +5,7 @@
         <div class="flex flex-1 overflow-y-hidden">
             <sidebar />
 
-            <div class="w-2/3 overflow-y-auto">
+            <div class="w-2/3 overflow-x-hidden">
                 <router-view></router-view>
             </div>
 
