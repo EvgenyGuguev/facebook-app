@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5805ecb0-9034-4dfc-8385-459fd465d5fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_05_141327_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_05_141327_create_posts_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/NewsFeed.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/NewsFeed.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Post.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +170,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+  <component name="RunManager" selected="PHPUnit.RetrievePostsTest.a_user_can_retrieve_posts">
     <configuration name="RetrievePostsTest.a_user_can_only_retrieve_their_posts" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\RetrievePostsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/RetrievePostsTest.php" method="a_user_can_only_retrieve_their_posts" scope="Method" />
       <method v="2" />
@@ -197,8 +200,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.RetrievePostsTest.a_user_can_only_retrieve_their_posts" />
         <item itemvalue="PHPUnit.RetrievePostsTest.a_user_can_retrieve_posts" />
+        <item itemvalue="PHPUnit.RetrievePostsTest.a_user_can_only_retrieve_their_posts" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +235,7 @@
       <workItem from="1586250654694" duration="110000" />
       <workItem from="1586267875669" duration="11272000" />
       <workItem from="1586335382315" duration="44000" />
-      <workItem from="1586356124871" duration="2135000" />
+      <workItem from="1586356124871" duration="4198000" />
     </task>
     <servers />
   </component>
@@ -268,22 +271,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586335424078" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586194264144">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586360060603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586194264144" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586194264143">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586360060603" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1586360060603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586194264143" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586194264143">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586360060603" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1586360060603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586194264143" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586194264143">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586360060603" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1586360060603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586194264143" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586360060603" />
     <state x="769" y="335" key="NewPhpClassDialog" timestamp="1586183510425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,9 +295,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585924616960" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586357998391">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586360008590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586357998391" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586360008590" />
   </component>
 </project>
