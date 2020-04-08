@@ -6,13 +6,13 @@
                     <img src="https://visualpharm.com/assets/387/Person-595b40b75ba036ed117da139.svg" alt="User profile image" class="w-8 h-8 object-cover rounded-full">
                 </div>
                 <div class="ml-4">
-                    <div class="text-sm font-bold">New User</div>
+                    <div class="text-sm font-bold">{{ post.data.attributes.posted_by.data.attributes.name }}</div>
                     <div class="text-sm text-gray-600">12 minutes</div>
                 </div>
             </div>
 
             <div class="mt-4">
-                <p>Not having fun at all ;)</p>
+                <p>{{ post.data.attributes.body }}</p>
             </div>
         </div>
 
@@ -46,7 +46,11 @@
 
 <script>
     export default {
-        name: "Post"
+        name: "Post",
+
+        props: [
+            'post',
+        ]
     }
 </script>
 

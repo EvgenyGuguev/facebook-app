@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5805ecb0-9034-4dfc-8385-459fd465d5fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Post.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Nav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/NewPost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/NewPost.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/NewsFeed.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/NewsFeed.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Post.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +230,9 @@
       <workItem from="1586163830625" duration="11000" />
       <workItem from="1586182369656" duration="4856000" />
       <workItem from="1586250654694" duration="110000" />
-      <workItem from="1586267875669" duration="11022000" />
+      <workItem from="1586267875669" duration="11272000" />
+      <workItem from="1586335382315" duration="44000" />
+      <workItem from="1586356124871" duration="2135000" />
     </task>
     <servers />
   </component>
@@ -265,10 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="341" y="176" width="645" height="688" key="#phpunit.xml/0.0.1920.1040@0.0.1920.1040" timestamp="1586182826969" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586250764331">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586335424078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586250764331" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586335424078" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1586194264144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,9 +292,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585924616960" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586281362594">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586357998391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586281362594" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586357998391" />
   </component>
 </project>
