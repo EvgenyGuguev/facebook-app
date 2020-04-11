@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5805ecb0-9034-4dfc-8385-459fd465d5fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendRequestResponseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendRequestResponseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/FriendsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/FriendsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,24 +186,24 @@
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
-    <configuration name="FriendsTest.a_friend_id_is_required_for_friend_requests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="a_friend_id_is_required_for_friend_requests" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="FriendsTest.a_friendship_is_retrieved_when_fetching_the_profile" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="a_friendship_is_retrieved_when_fetching_the_profile" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FriendsTest.a_user_id_and_status_is_required_for_friend_request_responses" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="a_user_id_and_status_is_required_for_friend_request_responses" scope="Method" />
+    <configuration name="FriendsTest.a_user_id_is_required_for_ignoring_a_friend_request_responses" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="a_user_id_is_required_for_ignoring_a_friend_request_responses" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="FriendsTest.an_inverse_friendship_is_retrieved_when_fetching_the_profile" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="an_inverse_friendship_is_retrieved_when_fetching_the_profile" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="FriendsTest.only_the_recipient_can_accept_a_friend_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="only_the_recipient_can_accept_a_friend_request" scope="Method" />
+    <configuration name="FriendsTest.friend_request_can_be_ignored" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="friend_request_can_be_ignored" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FriendsTest.only_the_recipient_can_ignore_a_friend_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="only_the_recipient_can_ignore_a_friend_request" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -218,19 +217,19 @@
     </configuration>
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.FriendsTest.only_the_recipient_can_accept_a_friend_request" />
-      <item itemvalue="PHPUnit.FriendsTest.a_friend_id_is_required_for_friend_requests" />
-      <item itemvalue="PHPUnit.FriendsTest.a_user_id_and_status_is_required_for_friend_request_responses" />
       <item itemvalue="PHPUnit.FriendsTest.a_friendship_is_retrieved_when_fetching_the_profile" />
       <item itemvalue="PHPUnit.FriendsTest.an_inverse_friendship_is_retrieved_when_fetching_the_profile" />
+      <item itemvalue="PHPUnit.FriendsTest.friend_request_can_be_ignored" />
+      <item itemvalue="PHPUnit.FriendsTest.only_the_recipient_can_ignore_a_friend_request" />
+      <item itemvalue="PHPUnit.FriendsTest.a_user_id_is_required_for_ignoring_a_friend_request_responses" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FriendsTest.a_user_id_is_required_for_ignoring_a_friend_request_responses" />
+        <item itemvalue="PHPUnit.FriendsTest.only_the_recipient_can_ignore_a_friend_request" />
+        <item itemvalue="PHPUnit.FriendsTest.friend_request_can_be_ignored" />
         <item itemvalue="PHPUnit.FriendsTest.an_inverse_friendship_is_retrieved_when_fetching_the_profile" />
         <item itemvalue="PHPUnit.FriendsTest.a_friendship_is_retrieved_when_fetching_the_profile" />
-        <item itemvalue="PHPUnit.FriendsTest.a_user_id_and_status_is_required_for_friend_request_responses" />
-        <item itemvalue="PHPUnit.FriendsTest.a_friend_id_is_required_for_friend_requests" />
-        <item itemvalue="PHPUnit.FriendsTest.only_the_recipient_can_accept_a_friend_request" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +269,7 @@
       <workItem from="1586443532272" duration="10662000" />
       <workItem from="1586509851315" duration="29000" />
       <workItem from="1586528307410" duration="8115000" />
-      <workItem from="1586614540811" duration="7338000" />
+      <workItem from="1586614540811" duration="8613000" />
     </task>
     <servers />
   </component>
@@ -310,22 +309,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586538806437" />
-    <state width="1877" height="247" key="GridCell.Tab.0.bottom" timestamp="1586624211535">
+    <state width="1877" height="247" key="GridCell.Tab.0.bottom" timestamp="1586625297166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586624211535" />
-    <state width="1877" height="247" key="GridCell.Tab.0.center" timestamp="1586624211535">
+    <state width="1877" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586625297166" />
+    <state width="1877" height="247" key="GridCell.Tab.0.center" timestamp="1586625297166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="247" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586624211535" />
-    <state width="1877" height="247" key="GridCell.Tab.0.left" timestamp="1586624211535">
+    <state width="1877" height="247" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586625297166" />
+    <state width="1877" height="247" key="GridCell.Tab.0.left" timestamp="1586625297166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="247" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586624211535" />
-    <state width="1877" height="247" key="GridCell.Tab.0.right" timestamp="1586624211535">
+    <state width="1877" height="247" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586625297166" />
+    <state width="1877" height="247" key="GridCell.Tab.0.right" timestamp="1586625297166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="247" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586624211535" />
+    <state width="1877" height="247" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586625297166" />
     <state x="769" y="335" key="NewPhpClassDialog" timestamp="1586183510425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -334,9 +333,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585924616960" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586619840353">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586624856980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586619840353" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586624856980" />
   </component>
 </project>
