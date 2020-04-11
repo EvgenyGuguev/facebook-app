@@ -12,11 +12,35 @@
 
 namespace App{
 /**
+ * App\Friend
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend query()
+ */
+	class Friend extends \Eloquent {}
+}
+
+namespace App{
+/**
  * App\Post
  *
+ * @property int $id
+ * @property int $user_id
+ * @property string $body
+ * @property string|null $image
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\User $user
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Post query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereBody($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Post whereUserId($value)
  */
 	class Post extends \Eloquent {}
 }
@@ -35,8 +59,12 @@ namespace App{
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Passport\Client[] $clients
  * @property-read int|null $clients_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\User[] $friends
+ * @property-read int|null $friends_count
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
  * @property-read int|null $notifications_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Post[] $posts
+ * @property-read int|null $posts_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\Laravel\Passport\Token[] $tokens
  * @property-read int|null $tokens_count
  * @method static \Illuminate\Database\Eloquent\Builder|\App\User newModelQuery()

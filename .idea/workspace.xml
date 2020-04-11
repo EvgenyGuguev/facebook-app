@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5805ecb0-9034-4dfc-8385-459fd465d5fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_10_155427_create_friends_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_10_155427_create_friends_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper_models.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper_models.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendRequestResponseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendRequestResponseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/FriendsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/FriendsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +188,7 @@
       <recent name="C:\Domains\facebook-app\resources\js\views" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.FriendsTest.friend_request_can_be_accepted">
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="FriendsTest.a_user_can_send_a_friend_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="a_user_can_send_a_friend_request" scope="Method" />
       <method v="2" />
@@ -197,16 +197,16 @@
       <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="friend_request_can_be_accepted" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="FriendsTest.only_the_recipient_can_accept_a_friend_request" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="only_the_recipient_can_accept_a_friend_request" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FriendsTest.only_valid_friend_request_can_be_accepted" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="only_valid_friend_request_can_be_accepted" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="FriendsTest.only_valid_users_can_be_friend_requested" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="only_valid_users_can_be_friend_requested" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="GetAuthUserTest.authenticated_user_can_be_fetched" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\GetAuthUserTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/GetAuthUserTest.php" method="authenticated_user_can_be_fetched" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="UserCanViewProfileTest.a_user_can_fetch_posts_for_a_profile" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\UserCanViewProfileTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UserCanViewProfileTest.php" method="a_user_can_fetch_posts_for_a_profile" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -220,19 +220,19 @@
     </configuration>
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.UserCanViewProfileTest.a_user_can_fetch_posts_for_a_profile" />
-      <item itemvalue="PHPUnit.GetAuthUserTest.authenticated_user_can_be_fetched" />
       <item itemvalue="PHPUnit.FriendsTest.a_user_can_send_a_friend_request" />
       <item itemvalue="PHPUnit.FriendsTest.only_valid_users_can_be_friend_requested" />
       <item itemvalue="PHPUnit.FriendsTest.friend_request_can_be_accepted" />
+      <item itemvalue="PHPUnit.FriendsTest.only_valid_friend_request_can_be_accepted" />
+      <item itemvalue="PHPUnit.FriendsTest.only_the_recipient_can_accept_a_friend_request" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FriendsTest.only_the_recipient_can_accept_a_friend_request" />
+        <item itemvalue="PHPUnit.FriendsTest.only_valid_friend_request_can_be_accepted" />
         <item itemvalue="PHPUnit.FriendsTest.friend_request_can_be_accepted" />
         <item itemvalue="PHPUnit.FriendsTest.only_valid_users_can_be_friend_requested" />
         <item itemvalue="PHPUnit.FriendsTest.a_user_can_send_a_friend_request" />
-        <item itemvalue="PHPUnit.GetAuthUserTest.authenticated_user_can_be_fetched" />
-        <item itemvalue="PHPUnit.UserCanViewProfileTest.a_user_can_fetch_posts_for_a_profile" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +271,8 @@
       <workItem from="1586422528341" duration="30000" />
       <workItem from="1586443532272" duration="10662000" />
       <workItem from="1586509851315" duration="29000" />
-      <workItem from="1586528307410" duration="7870000" />
+      <workItem from="1586528307410" duration="8115000" />
+      <workItem from="1586614540811" duration="1932000" />
     </task>
     <servers />
   </component>
@@ -307,26 +308,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="341" y="176" width="645" height="688" key="#phpunit.xml/0.0.1920.1040@0.0.1920.1040" timestamp="1586182826969" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586509878549">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586538806437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586509878549" />
-    <state width="1877" height="246" key="GridCell.Tab.0.bottom" timestamp="1586538239319">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586538806437" />
+    <state width="1877" height="229" key="GridCell.Tab.0.bottom" timestamp="1586617752356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586538239319" />
-    <state width="1877" height="246" key="GridCell.Tab.0.center" timestamp="1586538239319">
+    <state width="1877" height="229" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586617752356" />
+    <state width="1877" height="229" key="GridCell.Tab.0.center" timestamp="1586617752356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="246" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586538239319" />
-    <state width="1877" height="246" key="GridCell.Tab.0.left" timestamp="1586538239319">
+    <state width="1877" height="229" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586617752356" />
+    <state width="1877" height="229" key="GridCell.Tab.0.left" timestamp="1586617752355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="246" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586538239319" />
-    <state width="1877" height="246" key="GridCell.Tab.0.right" timestamp="1586538239319">
+    <state width="1877" height="229" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586617752355" />
+    <state width="1877" height="229" key="GridCell.Tab.0.right" timestamp="1586617752356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="246" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586538239319" />
+    <state width="1877" height="229" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586617752356" />
     <state x="769" y="335" key="NewPhpClassDialog" timestamp="1586183510425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -335,9 +336,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585924616960" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586538140348">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586616984333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586538140348" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586616984333" />
   </component>
 </project>
