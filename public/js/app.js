@@ -38273,7 +38273,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.status.posts === "success" && _vm.user
+  return _vm.status.user === "success" && _vm.user
     ? _c(
         "div",
         { staticClass: "flex flex-col items-center" },
@@ -55106,7 +55106,9 @@ var getters = {
     return state.user.data.attributes.friendship;
   },
   friendButtonText: function friendButtonText(state, getters, rootState) {
-    if (getters.friendship === null) {
+    if (rootState.User.user.data.user_id === state.user.data.user_id) {
+      return '';
+    } else if (getters.friendship === null) {
       return 'Add Friend';
     } else if (getters.friendship.data.attributes.confirmed_at === null && getters.friendship.data.attributes.friend_id !== rootState.User.user.data.user_id) {
       return 'Pending Friend Request';
@@ -55142,7 +55144,12 @@ var actions = {
   },
   sendFriendRequest: function sendFriendRequest(_ref3, friendId) {
     var commit = _ref3.commit,
-        state = _ref3.state;
+        getters = _ref3.getters;
+
+    if (getters.friendButtonText !== 'Add Friend') {
+      return;
+    }
+
     axios.post('/api/friend-request', {
       'friend_id': friendId
     }).then(function (res) {
@@ -55182,7 +55189,7 @@ var mutations = {
     state.user.data.attributes.friendship = friendship;
   },
   setUserStatus: function setUserStatus(state, status) {
-    state.userstatus = status;
+    state.userStatus = status;
   },
   setPostsStatus: function setPostsStatus(state, status) {
     state.postsStatus = status;

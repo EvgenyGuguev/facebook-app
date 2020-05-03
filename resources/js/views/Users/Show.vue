@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center" v-if="status.posts === 'success' && user">
+    <div class="flex flex-col items-center" v-if="status.user === 'success' && user">
         <div class="relative mb-8">
             <div class="w-100 h-64 overflow-hidden z-10">
                 <img src="https://www.publicdomainpictures.net/pictures/310000/velka/new-zealand-landscape.jpg" class="object-cover w-full">
