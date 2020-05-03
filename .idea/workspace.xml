@@ -15,9 +15,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -171,7 +169,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -181,6 +178,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -235,18 +233,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -275,12 +261,14 @@
       <workItem from="1586685782260" duration="421000" />
       <workItem from="1586701163599" duration="4210000" />
       <workItem from="1586705462228" duration="1430000" />
-      <workItem from="1587133889979" duration="1495000" />
+      <workItem from="1587133889979" duration="3183000" />
+      <workItem from="1587202317540" duration="11000" />
+      <workItem from="1588518866797" duration="4900000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="423" y="110" key="#PHP" timestamp="1586182855006">
@@ -311,10 +299,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="341" y="176" width="645" height="688" key="#phpunit.xml/0.0.1920.1040@0.0.1920.1040" timestamp="1586182826969" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586706892787">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1587202326719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586706892787" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587202326719" />
     <state width="1877" height="247" key="GridCell.Tab.0.bottom" timestamp="1586706893804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -335,10 +323,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586183510425" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1585924616960">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1588519728118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585924616960" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588519728118" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587134877338">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

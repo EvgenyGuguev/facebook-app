@@ -31,7 +31,7 @@
         },
 
         created() {
-            this.$store.dispatch('setPageTitle', this.$store.meta.title);
+            this.$store.dispatch('setPageTitle', this.$route.meta.title);
         },
 
         watch: {
