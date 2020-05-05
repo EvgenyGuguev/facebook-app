@@ -14,9 +14,23 @@ namespace App{
 /**
  * App\Friend
  *
+ * @property int $id
+ * @property int $user_id
+ * @property int $friend_id
+ * @property int|null $status
+ * @property \Illuminate\Support\Carbon|null $confirmed_at
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend whereConfirmedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend whereFriendId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend whereStatus($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Friend whereUserId($value)
  */
 	class Friend extends \Eloquent {}
 }
