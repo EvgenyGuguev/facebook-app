@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5805ecb0-9034-4dfc-8385-459fd465d5fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/store/modules/posts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/NewPost.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/NewPost.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/views/NewsFeed.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/NewsFeed.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/PostTimelineTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/PostTimelineTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/posts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +251,7 @@
       <workItem from="1587202317540" duration="11000" />
       <workItem from="1588518866797" duration="7335000" />
       <workItem from="1588578230676" duration="60000" />
-      <workItem from="1588683819998" duration="3798000" />
+      <workItem from="1588683819998" duration="5376000" />
     </task>
     <servers />
   </component>

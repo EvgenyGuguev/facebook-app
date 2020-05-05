@@ -7,8 +7,22 @@
                 </div>
             </div>
             <div class="flex flex-1 mx-4">
-                <input type="text" name="body" class="rounded-full w-56 pl-8 bg-gray-200 h-8 focus:outline-none focus:shadow-outline w-full" placeholder="Add a Post">
-                <button class="bg-gray-200 ml-2 px-3 py-2 rounded-full">Post</button>
+                <input
+                    type="text"
+                    name="body"
+                    class="rounded-full w-56 pl-8 bg-gray-200 h-8 focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Add a Post"
+                    v-model="postMessage"
+                >
+                <transition name="fade">
+                    <button
+                        class="bg-gray-200 ml-2 px-3 py-2 rounded-full"
+                        @click="$store.dispatch('postMessage')"
+                        v-if="postMessage"
+                    >
+                        Post
+                    </button>
+                </transition>
             </div>
             <div>
                 <button class=" flex justify-center items-center rounded-full w-10 h-10 bg-gray-200">
@@ -20,11 +34,30 @@
 </template>
 
 <script>
+    import _ from 'lodash';
+
     export default {
-        name: "NewPost"
+        name: "NewPost",
+
+        computed: {
+            postMessage: {
+                get() {
+                    return this.$store.getters.postMessage;
+                },
+                set: _.debounce(function(postMessage) {
+                    this.$store.commit('updateMessage', postMessage)
+                }, 300),
+            }
+        }
     }
 </script>
 
 <style scoped>
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
 
+    .fade-enter, .fade-leave {
+        opacity: 0;
+    }
 </style>
