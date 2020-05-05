@@ -6,8 +6,9 @@
                     <img src="https://visualpharm.com/assets/387/Person-595b40b75ba036ed117da139.svg" alt="User profile image" class="w-8 h-8 object-cover rounded-full">
                 </div>
             </div>
-            <div class="flex-1 mx-4">
+            <div class="flex flex-1 mx-4">
                 <input type="text" name="body" class="rounded-full w-56 pl-8 bg-gray-200 h-8 focus:outline-none focus:shadow-outline w-full" placeholder="Add a Post">
+                <button class="bg-gray-200 ml-2 px-3 py-2 rounded-full">Post</button>
             </div>
             <div>
                 <button class=" flex justify-center items-center rounded-full w-10 h-10 bg-gray-200">
