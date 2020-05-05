@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5805ecb0-9034-4dfc-8385-459fd465d5fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/LikeCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/LikeCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/LikesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/LikesTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,17 +171,17 @@
       <recent name="C:\Domains\facebook-app\resources\js\views" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.LikesTest.a_user_can_like_a_post">
-    <configuration name="FriendsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="FriendsTest.a_user_can_send_a_friend_request_only_once" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\FriendsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/FriendsTest.php" method="a_user_can_send_a_friend_request_only_once" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="LikesTest.a_user_can_like_a_post" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\LikesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/LikesTest.php" method="a_user_can_like_a_post" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LikesTest.post_are_returned_with_likes" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\LikesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/LikesTest.php" method="post_are_returned_with_likes" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="PostTimelineTest.a_user_can_create_text_post" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -203,19 +203,19 @@
     </configuration>
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.FriendsTest" />
       <item itemvalue="PHPUnit.FriendsTest.a_user_can_send_a_friend_request_only_once" />
       <item itemvalue="PHPUnit.RetrievePostsTest.a_user_can_retrieve_posts" />
       <item itemvalue="PHPUnit.PostTimelineTest.a_user_can_create_text_post" />
       <item itemvalue="PHPUnit.LikesTest.a_user_can_like_a_post" />
+      <item itemvalue="PHPUnit.LikesTest.post_are_returned_with_likes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.LikesTest.post_are_returned_with_likes" />
         <item itemvalue="PHPUnit.LikesTest.a_user_can_like_a_post" />
         <item itemvalue="PHPUnit.PostTimelineTest.a_user_can_create_text_post" />
         <item itemvalue="PHPUnit.RetrievePostsTest.a_user_can_retrieve_posts" />
         <item itemvalue="PHPUnit.FriendsTest.a_user_can_send_a_friend_request_only_once" />
-        <item itemvalue="PHPUnit.FriendsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +251,7 @@
       <workItem from="1587202317540" duration="11000" />
       <workItem from="1588518866797" duration="7335000" />
       <workItem from="1588578230676" duration="60000" />
-      <workItem from="1588683819998" duration="7823000" />
+      <workItem from="1588683819998" duration="9075000" />
     </task>
     <servers />
   </component>
@@ -275,6 +275,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586183150799" />
+    <state x="143" y="49" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1588697368594">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="49" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588697368594" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585928858113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -291,22 +295,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588578289031" />
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1588696065704">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1588697333849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588696065704" />
-    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1588696065704">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588697333849" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1588697333849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588696065704" />
-    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1588696065704">
+    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588697333849" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1588697333849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588696065704" />
-    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1588696065704">
+    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588697333849" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1588697333849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588696065704" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588697333849" />
     <state x="769" y="335" key="NewPhpClassDialog" timestamp="1586183510425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -315,9 +319,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588519728118" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588695962333">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588696778487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588695962333" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588696778487" />
   </component>
 </project>
