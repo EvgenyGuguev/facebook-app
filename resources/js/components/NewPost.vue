@@ -10,7 +10,7 @@
                 <input
                     type="text"
                     name="body"
-                    class="rounded-full w-56 pl-8 bg-gray-200 h-8 focus:outline-none focus:shadow-outline w-full"
+                    class="rounded-full pl-8 bg-gray-200 h-8 focus:outline-none focus:shadow-outline w-full"
                     placeholder="Add a Post"
                     v-model="postMessage"
                 >

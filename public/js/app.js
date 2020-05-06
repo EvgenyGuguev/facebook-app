@@ -2141,9 +2141,57 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Post",
-  props: ['post']
+  props: ['post'],
+  data: function data() {
+    return {
+      comments: false,
+      commentBody: ''
+    };
+  }
 });
 
 /***/ }),
@@ -38597,7 +38645,7 @@ var render = function() {
               }
             ],
             staticClass:
-              "rounded-full w-56 pl-8 bg-gray-200 h-8 focus:outline-none focus:shadow-outline w-full",
+              "rounded-full pl-8 bg-gray-200 h-8 focus:outline-none focus:shadow-outline w-full",
             attrs: { type: "text", name: "body", placeholder: "Add a Post" },
             domProps: { value: _vm.postMessage },
             on: {
@@ -38768,7 +38816,14 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _vm._m(1)
+          _c("div", [
+            _c("p", [
+              _vm._v(
+                _vm._s(_vm.post.data.attributes.comments.comment_count) +
+                  " comments"
+              )
+            ])
+          ])
         ]
       ),
       _vm._v(" "),
@@ -38823,7 +38878,12 @@ var render = function() {
             "button",
             {
               staticClass:
-                "flex justify-center py-2 rounded-lg text-sm text-gray-700 hover:bg-gray-200 w-full"
+                "flex justify-center py-2 rounded-lg text-sm text-gray-700 w-full focus:outline-none",
+              on: {
+                click: function($event) {
+                  _vm.comments = !_vm.comments
+                }
+              }
             },
             [
               _c(
@@ -38849,8 +38909,97 @@ var render = function() {
             ]
           )
         ]
-      )
-    ]
+      ),
+      _vm._v(" "),
+      _vm.comments
+        ? _c("div", { staticClass: "border-t border-gray-400 p-4 pt-2" }, [
+            _c("div", { staticClass: "flex" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.commentBody,
+                    expression: "commentBody"
+                  }
+                ],
+                staticClass:
+                  "w-full pl-4 h-8 bg-gray-200 rounded-lg focus:outline-none",
+                attrs: { type: "text", name: "comment" },
+                domProps: { value: _vm.commentBody },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.commentBody = $event.target.value
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _vm.commentBody
+                ? _c(
+                    "button",
+                    {
+                      staticClass:
+                        "bg-gray-200 ml-2 px-2 py-1 rounded-lg focus:outline-none"
+                    },
+                    [_vm._v("\n                Post\n            ")]
+                  )
+                : _vm._e()
+            ])
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _vm._l(_vm.post.data.attributes.comments.data, function(comment) {
+        return _c(
+          "div",
+          { key: comment, staticClass: "flex my-4 items-center m-3" },
+          [
+            _vm._m(1, true),
+            _vm._v(" "),
+            _c("div", { staticClass: "ml-4 flex-1" }, [
+              _c("div", { staticClass: "bg-gray-200 rounded-lg p-2 text-sm" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "font-bold text-blue-700",
+                    attrs: {
+                      href:
+                        "/users/" +
+                        comment.data.attributes.commented_by.data.user_id
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                    " +
+                        _vm._s(
+                          comment.data.attributes.commented_by.data.attributes
+                            .name
+                        ) +
+                        ":\n                "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("p", { staticClass: "inline" }, [
+                  _vm._v(
+                    "\n                    " +
+                      _vm._s(comment.data.attributes.body) +
+                      "\n                "
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-xs pl-2 mt-1" }, [
+                _c("p", [_vm._v(_vm._s(comment.data.attributes.commented_at))])
+              ])
+            ])
+          ]
+        )
+      })
+    ],
+    2
   )
 }
 var staticRenderFns = [
@@ -38873,7 +39022,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("p", [_vm._v("142 comments")])])
+    return _c("div", { staticClass: "w-8" }, [
+      _c("img", {
+        staticClass: "w-8 h-8 object-cover rounded-full",
+        attrs: {
+          src:
+            "https://visualpharm.com/assets/387/Person-595b40b75ba036ed117da139.svg",
+          alt: "User profile image"
+        }
+      })
+    ])
   }
 ]
 render._withStripped = true
