@@ -53,13 +53,15 @@
                        type="text" name="comment"
                        class="w-full pl-4 h-8 bg-gray-200 rounded-lg focus:outline-none">
                 <button v-if="commentBody"
-                        class="bg-gray-200 ml-2 px-2 py-1 rounded-lg focus:outline-none">
+                        class="bg-gray-200 ml-2 px-2 py-1 rounded-lg focus:outline-none"
+                        @click="$store.dispatch('commentPost', { body: commentBody, postId: post.data.post_id, postKey: $vnode.key }); commentBody = ''"
+                >
                     Post
                 </button>
             </div>
-        </div>
 
-        <div class="flex my-4 items-center m-3"
+
+            <div class="flex my-4 items-center m-3"
              v-for="comment in post.data.attributes.comments.data"
              :key="comment"
         >
@@ -84,6 +86,7 @@
                     <p>{{ comment.data.attributes.commented_at }}</p>
                 </div>
             </div>
+        </div>
         </div>
 
     </div>
