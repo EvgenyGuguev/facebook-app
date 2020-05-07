@@ -2,16 +2,22 @@
     <div class="flex flex-col items-center" v-if="status.user === 'success' && user">
         <div class="relative mb-8">
             <div class="w-100 h-64 overflow-hidden z-10">
-                <uploadable-image
-                    image-width="1500"
-                    image-height="300"
-                    loation="cover"
-                />
+                <UploadableImage image-width="1500"
+                                 image-height="300"
+                                 location="cover"
+                                 alt="user background image"
+                                 classes="object-cover w-full"
+                                 :user-image="user.data.attributes.cover_image"/>
             </div>
 
             <div class="absolute flex items-center bottom-0 left-0 -mb-8 ml-12 z-20">
                 <div class="w-32">
-                    <img src="https://visualpharm.com/assets/387/Person-595b40b75ba036ed117da139.svg" alt="User profile image" class="w-32 h-32 border-4 border-gray-200 rounded-full shadow-lg">
+                    <UploadableImage image-width="1500"
+                                     image-height="300"
+                                     location="profile"
+                                     alt="user profile image"
+                                     classes="w-32 h-32 border-4 border-gray-200 rounded-full shadow-lg"
+                                     :user-image="user.data.attributes.profile_image"/>
                 </div>
 
                 <p class="ml-4 text-2xl text-gray-100">{{ user.data.attributes.name }}</p>

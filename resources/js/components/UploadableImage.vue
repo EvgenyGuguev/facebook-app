@@ -1,10 +1,9 @@
 <template>
     <div>
         <img src="https://www.publicdomainpictures.net/pictures/310000/velka/new-zealand-landscape.jpg"
-             alt="user background image"
+             :alt="alt"
              ref="userImage"
-             class="object-cover w-full"
-        >
+             :class="classes">
     </div>
 </template>
 
@@ -15,14 +14,18 @@
         name: "UploadableImage",
 
         props: [
+            'userImage',
             'imageWidth',
             'imageHeight',
             'location',
+            'classes',
+            'alt',
         ],
 
-        data() {
+        data: () => {
             return {
                 dropzone: null,
+                uploadedImage: null,
             }
         },
 
@@ -44,10 +47,14 @@
                     headers: {
                         'X-CSRF-TOKEN': document.head.querySelector('meta[name=csrf-token]').content,
                     },
-                    success: (event, response) => {
-                        alert('uploaded!');
+                    success: (e, res) => {
+                        this.uploadedImage = res;
                     }
                 };
+            },
+
+            imageObject() {
+                return this.uploadedImage || this.userImage;
             }
         }
     }
